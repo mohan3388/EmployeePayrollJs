@@ -31,3 +31,24 @@ const Wage_Per_Hours=20;
     let empWage = empHrs*Wage_Per_Hours;
     console.log("calculate empwage: "+empWage);
 }
+
+//UC5
+
+
+function getWorkingHours(empCheck){
+    switch(empCheck)
+    {
+        case Is_Parttime:
+            return Parttime_Hours;
+            
+        case Is_Fulltime:
+            return Fulltime_Hours;
+        default:
+            return 0;
+    }
+}
+   
+    
+    let empHrs = getWorkingHours(empCheck);
+    let empWage = empHrs*Wage_Per_Hours;
+    console.log("Total Hrs: "+empHrs+"calculate empwage: "+empWage);
