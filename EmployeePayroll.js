@@ -84,20 +84,8 @@
     
     //UC6 calculate empdailywage using map
     
-    let empDailyWageMap = new Map();
+    //let empDailyWageMap = new Map();
     let empDailyHrsMap = new Map();
-    
-    
-    
-    // const Is_Fulltime=2;
-    // const Is_Parttime=1;
-    // const Parttime_Hours=4;
-    // const Fulltime_Hours=8;
-    // const Wage_Per_Hours=20;
-    // const Max_Hrs_In_Month = 160;
-    // const Number_Of_WorkingDay = 20;
-    
-    
     function getWorkingHours(empCheck){
         switch(empCheck)
         {
