@@ -32,9 +32,8 @@ const Wage_Per_Hours=20;
     console.log("calculate empwage: "+empWage);
 }
 
-//UC5
 
-
+//UC3 Calculate EmployeeWage Using Function
 function getWorkingHours(empCheck){
     switch(empCheck)
     {
@@ -52,3 +51,16 @@ function getWorkingHours(empCheck){
     let empHrs = getWorkingHours(empCheck);
     let empWage = empHrs*Wage_Per_Hours;
     console.log("Total Hrs: "+empHrs+"calculate empwage: "+empWage);
+
+      //Uc4 using for loop calculate empwage
+{
+let TotalEmpHrs=0;
+var Number_Of_WorkingDay=20;
+for(let day=0; day<Number_Of_WorkingDay; day++)
+{
+    let empCheck=Math.floor(Math.random()*10)%3;
+    TotalEmpHrs+=getWorkingHours(empCheck);
+}
+let empWage = TotalEmpHrs*Wage_Per_Hours;
+console.log("Hour: "+TotalEmpHrs+" EmpWage: "+empWage);
+}
